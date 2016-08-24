@@ -1,0 +1,13 @@
+﻿<Properties StartupItem="MyGameUnx.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug-Unix|AnyCPU" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/GameMain.cs">
+    <Files>
+      <File FileName="src/GameMain.cs" Line="4" Column="17" />
+      <File FileName="Shape.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

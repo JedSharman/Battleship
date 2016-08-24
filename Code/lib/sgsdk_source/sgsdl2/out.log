@@ -1,0 +1,278 @@
+./src/SGSDL2Graphics.cpp:398:23: warning: variable length arrays are a C99 feature [-Wvla-extension]
+            int pixels[w * h];
+                      ^
+./src/SGSDL2Graphics.cpp:398:23: warning: variable length array used [-Wvla]
+./src/SGSDL2Graphics.cpp:1459:21: warning: cast from 'Uint8 *' (aka 'unsigned char *') to 'Uint16 *' (aka 'unsigned short *') increases required alignment from 1 to 2 [-Wcast-align]
+            return *(Uint16 *)p;
+                    ^~~~~~~~~~~
+./src/SGSDL2Graphics.cpp:1469:22: warning: cast from 'Uint8 *' (aka 'unsigned char *') to 'Uint32 *' (aka 'unsigned int *') increases required alignment from 1 to 4 [-Wcast-align]
+            color = *(Uint32 *)p;
+                     ^~~~~~~~~~~
+./src/SGSDL2Graphics.cpp:1643:32: warning: unused parameter 'ctx' [-Wunused-parameter]
+void png_user_warn(png_structp ctx, png_const_charp str)
+                               ^
+./src/SGSDL2Graphics.cpp:1643:53: warning: unused parameter 'str' [-Wunused-parameter]
+void png_user_warn(png_structp ctx, png_const_charp str)
+                                                    ^
+./src/SGSDL2Graphics.cpp:1648:33: warning: unused parameter 'ctx' [-Wunused-parameter]
+void png_user_error(png_structp ctx, png_const_charp str)
+                                ^
+./src/SGSDL2Graphics.cpp:1648:54: warning: unused parameter 'str' [-Wunused-parameter]
+void png_user_error(png_structp ctx, png_const_charp str)
+                                                     ^
+./src/SGSDL2Graphics.cpp:1704:31: warning: cast from 'uint8_t *' (aka 'unsigned char *') to 'int *' increases required alignment from 1 to 4 [-Wcast-align]
+    sgsdl2_to_pixels(surface, (int *)pixels, (int)sz);
+                              ^~~~~~~~~~~~~
+9 warnings generated.
+./src/SGSDL2Input.cpp:276:13: warning: enumeration values 'SGDS_Unknown' and 'SGDS_Bitmap' not explicitly handled in switch [-Wswitch-enum]
+    switch (surface->kind)
+            ^
+./src/SGSDL2Input.cpp:295:13: warning: enumeration values 'SGDS_Unknown' and 'SGDS_Bitmap' not explicitly handled in switch [-Wswitch-enum]
+    switch (surface->kind)
+            ^
+2 warnings generated.
+./src/SGSDL2Network.cpp:25:18: warning: no previous extern declaration for non-static variable '_sockets' [-Wmissing-variable-declarations]
+SDLNet_SocketSet _sockets; // allocate on setup of functions.
+                 ^
+1 warning generated.
+./src/SGSDL2Web.cpp:92:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_URL, host);
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:95:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_PORT, port);
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:97:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_FOLLOWLOCATION, 1L);
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:99:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_POSTFIELDS, body);
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:101:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_SSL_VERIFYPEER, 0L);
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:108:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_HTTPHEADER, list);
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:111:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_WRITEFUNCTION, write_memory_callback);
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:114:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_WRITEDATA, (void *)&result);
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:117:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_USERAGENT, "libcurl-agent/1.0");
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:133:9: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+        curl_easy_getinfo(curl_handle, CURLINFO_RESPONSE_CODE, &status);
+        ^
+/usr/include/curl/curl.h:2290:44: note: expanded from macro 'curl_easy_getinfo'
+#define curl_easy_getinfo(handle,info,arg) curl_easy_getinfo(handle,info,arg)
+                                           ^
+./src/SGSDL2Web.cpp:153:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_URL, host);
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:156:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_PORT, port);
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:158:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_FOLLOWLOCATION, 1L);
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:161:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_WRITEFUNCTION, write_memory_callback);
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:164:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_WRITEDATA, (void *)&result);
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:167:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_USERAGENT, "libcurl-agent/1.0");
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:180:9: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+        curl_easy_getinfo(curl_handle, CURLINFO_RESPONSE_CODE, &status);
+        ^
+/usr/include/curl/curl.h:2290:44: note: expanded from macro 'curl_easy_getinfo'
+#define curl_easy_getinfo(handle,info,arg) curl_easy_getinfo(handle,info,arg)
+                                           ^
+./src/SGSDL2Web.cpp:200:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_URL, host);
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:203:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_PORT, port);
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:205:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_FOLLOWLOCATION, 1L);
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:211:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_HTTPHEADER, list);
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:214:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_WRITEFUNCTION, write_memory_callback);
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:217:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_WRITEDATA, (void *)&result);
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:220:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_USERAGENT, "libcurl-agent/1.0");
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:223:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_READFUNCTION, read_request_body);
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:226:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_UPLOAD, 1L);
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:231:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_READDATA, &data);
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:234:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_INFILESIZE, (curl_off_t)strlen(data.body));
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:247:9: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+        curl_easy_getinfo(curl_handle, CURLINFO_RESPONSE_CODE, &status);
+        ^
+/usr/include/curl/curl.h:2290:44: note: expanded from macro 'curl_easy_getinfo'
+#define curl_easy_getinfo(handle,info,arg) curl_easy_getinfo(handle,info,arg)
+                                           ^
+./src/SGSDL2Web.cpp:269:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_URL, host);
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:272:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_PORT, port);
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:274:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_FOLLOWLOCATION, 1L);
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:276:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_POSTFIELDS, body);
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:282:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_HTTPHEADER, list);
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:285:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_WRITEFUNCTION, write_memory_callback);
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:288:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_WRITEDATA, (void *)&result);
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:291:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_USERAGENT, "libcurl-agent/1.0");
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:293:5: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+    curl_easy_setopt(curl_handle, CURLOPT_CUSTOMREQUEST, "DELETE");
+    ^
+/usr/include/curl/curl.h:2289:44: note: expanded from macro 'curl_easy_setopt'
+#define curl_easy_setopt(handle,opt,param) curl_easy_setopt(handle,opt,param)
+                                           ^
+./src/SGSDL2Web.cpp:306:9: warning: disabled expansion of recursive macro [-Wdisabled-macro-expansion]
+        curl_easy_getinfo(curl_handle, CURLINFO_RESPONSE_CODE, &status);
+        ^
+/usr/include/curl/curl.h:2290:44: note: expanded from macro 'curl_easy_getinfo'
+#define curl_easy_getinfo(handle,info,arg) curl_easy_getinfo(handle,info,arg)
+                                           ^
+./src/SGSDL2Web.cpp:329:9: warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
+        default:
+        ^
+./src/SGSDL2Web.cpp:330:22: warning: will never be executed [-Wunreachable-code]
+            return { 500, 0, NULL };
+                     ^~~
+41 warnings generated.
