@@ -1,2 +1,0 @@
-C:\Users\benem\Desktop\BattleShipsCOnvert\obj\x86\Debug-Windows\MyGameWin.csprojResolveAssemblyReference.cache
-C:\Users\benem\Documents\GitHub\Battleship\BattleShipsCOnvert\obj\x86\Debug-Windows\MyGameWin.csprojResolveAssemblyReference.cache

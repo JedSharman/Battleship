@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug-Unix</Configuration>
+    <ProjectGuid>{A9DCAC72-BC77-4C33-BE70-BBFD31D7C798}</ProjectGuid>
+    <RootNamespace>MyGame</RootNamespace>
+    <MonoMacResourcePrefix>Resources</MonoMacResourcePrefix>
+    <AssemblyName>MyGame</AssemblyName>
+    <SuppressXamMacUpsell>True</SuppressXamMacUpsell>
+    <SuppressXamMacMigration>True</SuppressXamMacMigration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <OutputType>Exe</OutputType>
+    <ApplicationIcon>Resources\SwinGame.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug-Unix|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <EnableCodeSigning>false</EnableCodeSigning>
+    <CreatePackage>false</CreatePackage>
+    <EnablePackageSigning>false</EnablePackageSigning>
+    <IncludeMonoRuntime>false</IncludeMonoRuntime>
+    <UseSGen>false</UseSGen>
+    <UseRefCounting>false</UseRefCounting>
+    <Profiling>false</Profiling>
+    <OutputType>WinExe</OutputType>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="BeforeBuild" command="lib/makelib.sh" workingdir="${ProjectDir}/lib" />
+        <Command type="AfterClean" command="lib/cleanlib.sh" workingdir="${ProjectDir}/lib" />
+      </CustomCommands>
+    </CustomCommands>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PrepareForRunDependsOn>$(PrepareForRunDependsOn);CopyLibsToOut</PrepareForRunDependsOn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="src\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\**\*.cs" />
+    <Compile Include="src\UtilityFunctions.cs" />
+    <Compile Include="src\MenuController.cs" />
+    <Compile Include="src\HighScoreController.cs" />
+    <Compile Include="src\GameState.cs" />
+    <Compile Include="src\GameResources.cs" />
+    <Compile Include="src\GameLogic.cs" />
+    <Compile Include="src\GameController.cs" />
+    <Compile Include="src\EndingGameController.cs" />
+    <Compile Include="src\DiscoveryController.cs" />
+    <Compile Include="src\DeploymentController.cs" />
+    <Compile Include="src\Model\TileView.cs" />
+    <Compile Include="src\Model\Tile.cs" />
+    <Compile Include="src\Model\ShipName.cs" />
+    <Compile Include="src\Model\Ship.cs" />
+    <Compile Include="src\Model\SeaGridAdapter.cs" />
+    <Compile Include="src\Model\SeaGrid.cs" />
+    <Compile Include="src\Model\ResultOfAttack.cs" />
+    <Compile Include="src\Model\Player.cs" />
+    <Compile Include="src\Model\ISeaGrid.cs" />
+    <Compile Include="src\Model\Direction.cs" />
+    <Compile Include="src\Model\BattleShipsGame.cs" />
+    <Compile Include="src\Model\AttackResult.cs" />
+    <Compile Include="src\Model\AIPlayer.cs" />
+    <Compile Include="src\Model\AIOption.cs" />
+    <Compile Include="src\Model\AIMediumPlayer.cs" />
+    <Compile Include="src\Model\AIHardPlayer.cs" />
+    <Compile Include="tst\GameResourcesTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="SwinGame">
+      <HintPath>lib\SwinGame.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\**\*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <UnxLibs Include="lib\linux\*.so" />
+  </ItemGroup>
+  <Target Name="CopyLibsToOut">
+    <Copy SourceFiles="@(UnxLibs)" DestinationFolder="$(OutDir)" />
+  </Target>
+</Project>
