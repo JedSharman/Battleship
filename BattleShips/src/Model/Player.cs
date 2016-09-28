@@ -79,7 +79,7 @@ public class Player : IEnumerable<Ship>
 
 	public bool IsDestroyed {
 //Check if all ships are destroyed... -1 for the none ship
-		get { return _playerGrid.ShipsKilled == Enum.GetValues(typeof(ShipName)).Length - 1; }
+		get {  return _playerGrid.ShipsKilled == Enum.GetValues(typeof(ShipName)).Length - 1; }
 	}
 
 	/// <summary>

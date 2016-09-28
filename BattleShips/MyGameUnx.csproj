@@ -45,36 +45,13 @@
   <ItemGroup>
     <Folder Include="src\" />
     <Folder Include="Resources\" />
+    <Folder Include="tst\" />
+    <Folder Include="src\Model\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="src\**\*.cs" />
-    <Compile Include="src\UtilityFunctions.cs" />
-    <Compile Include="src\MenuController.cs" />
-    <Compile Include="src\HighScoreController.cs" />
-    <Compile Include="src\GameState.cs" />
-    <Compile Include="src\GameResources.cs" />
     <Compile Include="src\GameLogic.cs" />
     <Compile Include="src\GameController.cs" />
-    <Compile Include="src\EndingGameController.cs" />
-    <Compile Include="src\DiscoveryController.cs" />
-    <Compile Include="src\DeploymentController.cs" />
-    <Compile Include="src\Model\TileView.cs" />
-    <Compile Include="src\Model\Tile.cs" />
-    <Compile Include="src\Model\ShipName.cs" />
-    <Compile Include="src\Model\Ship.cs" />
-    <Compile Include="src\Model\SeaGridAdapter.cs" />
-    <Compile Include="src\Model\SeaGrid.cs" />
-    <Compile Include="src\Model\ResultOfAttack.cs" />
-    <Compile Include="src\Model\Player.cs" />
-    <Compile Include="src\Model\ISeaGrid.cs" />
-    <Compile Include="src\Model\Direction.cs" />
-    <Compile Include="src\Model\BattleShipsGame.cs" />
-    <Compile Include="src\Model\AttackResult.cs" />
-    <Compile Include="src\Model\AIPlayer.cs" />
-    <Compile Include="src\Model\AIOption.cs" />
-    <Compile Include="src\Model\AIMediumPlayer.cs" />
-    <Compile Include="src\Model\AIHardPlayer.cs" />
-    <Compile Include="tst\GameResourcesTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SwinGame">

@@ -258,6 +258,11 @@ public static class GameController
 				SwitchState(GameState.EndingGame);
 				break;
 		}
+<<<<<<< HEAD
+=======
+
+		SwitchState(GameState.EndingGame);
+>>>>>>> jed_1
 	}
 
 	/// <summary>
