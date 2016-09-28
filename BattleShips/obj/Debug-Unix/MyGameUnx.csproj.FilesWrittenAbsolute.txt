@@ -137,3 +137,9 @@
 /home/jed_sharman/Documents/Swinburne/SWE/CS-convert/BattleShips/bin/Debug/MyGame.exe.mdb
 /home/jed_sharman/Documents/Swinburne/SWE/CS-convert/BattleShips/bin/Debug/MyGame.exe
 /home/jed_sharman/Documents/Swinburne/SWE/CS-convert/BattleShips/bin/Debug/Resources/sounds/siren.wav
+/home/liam/Documents/swee/Battleship/BattleShips/obj/Debug-Unix/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/home/liam/Documents/swee/Battleship/BattleShips/bin/Debug/MyGame.exe.mdb
+/home/liam/Documents/swee/Battleship/BattleShips/bin/Debug/MyGame.exe
+/home/liam/Documents/swee/Battleship/BattleShips/obj/Debug-Unix/MyGame.exe
+/home/liam/Documents/swee/Battleship/BattleShips/obj/Debug-Unix/MyGame.exe.mdb
+/home/liam/Documents/swee/Battleship/BattleShips/bin/Debug/SwinGame.dll
