@@ -207,3 +207,4 @@
 /home/jed_sharman/Documents/Swinburne/SWE/Battleship/BattleShips/bin/Debug/MyGame.exe.mdb
 /home/jed_sharman/Documents/Swinburne/SWE/Battleship/BattleShips/bin/Debug/MyGame.exe
 >>>>>>> jed_1
+/home/jed_sharman/Documents/Swinburne/SWE/Battleship/BattleShips/bin/Debug/Resources/highscores.txt~
