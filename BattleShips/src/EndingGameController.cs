@@ -32,7 +32,7 @@ static class EndingGameController
 		r.Width = SwinGame.ScreenWidth ();
 		r.Height = SwinGame.ScreenHeight () - 250;
 		
-		if (GameController.HumanPlayer.IsDestroyed) {
+		if (false){//GameController.HumanPlayer.IsDestroyed) {
 			SwinGame.DrawText("YOU LOSE!", Color.White, Color.Transparent, GameResources.GameFont("ArialLarge"), FontAlignment.AlignCenter, r);
 		} else {
 			SwinGame.DrawText("-- WINNER --", Color.White, Color.Transparent, GameResources.GameFont("ArialLarge"), FontAlignment.AlignCenter, r);
@@ -46,7 +46,7 @@ static class EndingGameController
 	public static void HandleEndOfGameInput()
 	{
 		if (SwinGame.MouseClicked(MouseButton.LeftButton) || SwinGame.KeyTyped(KeyCode.ReturnKey) || SwinGame.KeyTyped(KeyCode.EscapeKey)) {
-			HighScoreController.ReadHighScore (GameController.HumanPlayer.Score);
+			HighScoreController.ReadHighScore (1000);//GameController.HumanPlayer.Score);
 			GameController.EndCurrentState();
 		}
 	}
