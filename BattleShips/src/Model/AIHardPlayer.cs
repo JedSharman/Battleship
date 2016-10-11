@@ -106,6 +106,7 @@ public class AIHardPlayer : AIPlayer
 	protected override void GenerateCoords(ref int row, ref int column)
 	{
 		do {
+			Console.WriteLine("This is hard");
 			_CurrentTarget = null;
 
 			//check which state the AI is in and uppon that choose which coordinate generation
