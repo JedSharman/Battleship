@@ -261,6 +261,8 @@ public static class GameController
 				SwitchState(GameState.EndingGame);
 				break;
 		}
+
+		SwitchState(GameState.EndingGame);
 	}
 
 	/// <summary>
