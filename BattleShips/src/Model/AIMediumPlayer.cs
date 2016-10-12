@@ -40,6 +40,7 @@ public class AIMediumPlayer : AIPlayer
 	protected override void GenerateCoords(ref int row, ref int column)
 	{
 		do {
+			Console.WriteLine("This is Med");
 			//check which state the AI is in and uppon that choose which coordinate generation
 			//method will be used.
 			switch (_CurrentState) {
