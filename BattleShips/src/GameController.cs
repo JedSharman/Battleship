@@ -76,6 +76,9 @@ public static class GameController
 
 		//create the players
 		switch (_aiSetting) {
+		case AIOption.Easy:
+				_ai = new AIEasyPlayer(_theGame);
+				break;
 			case AIOption.Medium:
 				_ai = new AIMediumPlayer(_theGame);
 				break;
@@ -259,7 +262,7 @@ public static class GameController
 				break;
 		}
 
-		SwitchState(GameState.EndingGame);
+		//SwitchState(GameState.EndingGame); //Kills the game after first AI turn
 	}
 
 	/// <summary>
