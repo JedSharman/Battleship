@@ -1,16 +1,16 @@
 ﻿<Properties StartupItem="MyGameWin.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug-Windows|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="src\GameController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src\Model\AIEasyPlayer.cs">
     <Files>
       <File FileName="src\GameResources.cs" Line="1" Column="1" />
-      <File FileName="src\Model\SeaGrid.cs" Line="29" Column="36" />
+      <File FileName="src\Model\SeaGrid.cs" Line="1" Column="1" />
       <File FileName="src\Model\SeaGridAdapter.cs" Line="1" Column="1" />
       <File FileName="src\Model\ISeaGrid.cs" Line="1" Column="1" />
-      <File FileName="src\Model\AttackResult.cs" Line="11" Column="1" />
-      <File FileName="src\GameController.cs" Line="80" Column="38" />
+      <File FileName="src\Model\AttackResult.cs" Line="1" Column="1" />
+      <File FileName="src\GameController.cs" Line="1" Column="1" />
       <File FileName="src\Model\AIEasyPlayer.cs" Line="43" Column="4" />
-      <File FileName="src\Model\AIHardPlayer.cs" Line="109" Column="35" />
-      <File FileName="src\Model\AIMediumPlayer.cs" Line="43" Column="34" />
+      <File FileName="src\Model\AIHardPlayer.cs" Line="1" Column="1" />
+      <File FileName="src\Model\AIMediumPlayer.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

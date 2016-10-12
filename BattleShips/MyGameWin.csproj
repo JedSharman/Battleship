@@ -38,6 +38,7 @@
   <ItemGroup>
     <Folder Include="src\" />
     <Folder Include="Resources\" />
+    <Folder Include="src\Tests\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="src\**\*.cs" />
@@ -47,6 +48,9 @@
       <HintPath>lib\SwinGame.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="nunit.framework">
+      <HintPath>packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\**\*.*">
@@ -54,6 +58,8 @@
     </None>
     <WinLibs Include="lib\win32\*.dll" />
     <None Include="src\Model\AIEasyPlayer.cs" />
+    <None Include="packages.config" />
+    <None Include="src\Tests\SeaGridTests.cs" />
   </ItemGroup>
   <Target Name="CopyLibsToOut">
     <Copy SourceFiles="@(WinLibs)" DestinationFolder="$(OutDir)" />
