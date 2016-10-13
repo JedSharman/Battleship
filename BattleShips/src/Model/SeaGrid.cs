@@ -117,7 +117,7 @@ public class SeaGrid : ISeaGrid
 	/// <param name="col">col coordinate</param>
 	/// <param name="direction">direction of ship</param>
 	/// <param name="newShip">the ship</param>
-	private void AddShip(int row, int col, Direction direction, Ship newShip)
+	public void AddShip(int row, int col, Direction direction, Ship newShip)
 	{
 		try {
 			int size = newShip.Size;
