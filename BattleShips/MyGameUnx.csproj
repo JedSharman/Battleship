@@ -52,6 +52,7 @@
     <Compile Include="src\**\*.cs" />
     <Compile Include="src\GameLogic.cs" />
     <Compile Include="src\GameController.cs" />
+    <Compile Include="src\Model\PowerUp.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SwinGame">

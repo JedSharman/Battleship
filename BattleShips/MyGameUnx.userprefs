@@ -1,16 +1,6 @@
-﻿<Properties StartupItem="MyGameUnx.csproj">
+﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug-Unix|AnyCPU" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/GameController.cs">
-    <Files>
-      <File FileName="src/GameLogic.cs" Line="14" Column="23" />
-      <File FileName="src/GameController.cs" Line="261" Column="39" />
-      <File FileName="src/EndingGameController.cs" Line="35" Column="34" />
-      <File FileName="src/HighScoreController.cs" Line="194" Column="4" />
-      <File FileName="src/Model/Player.cs" Line="1" Column="1" />
-      <File FileName="src/UtilityFunctions.cs" Line="1" Column="1" />
-      <File FileName="src/DeploymentController.cs" Line="1" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
