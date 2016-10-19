@@ -29,6 +29,7 @@ static class DiscoveryController
 		if (SwinGame.MouseClicked(MouseButton.LeftButton)) {
 			DoAttack();
 		}
+			
 	}
 
 	/// <summary>
@@ -52,6 +53,7 @@ static class DiscoveryController
 			}
 		}
 	}
+		
 
 	/// <summary>
 	/// Draws the game during the attack phase.

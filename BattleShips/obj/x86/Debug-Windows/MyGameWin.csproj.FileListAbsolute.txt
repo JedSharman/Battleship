@@ -60,5 +60,4 @@ C:\Users\benem\Documents\GitHub\Battleship\BattleShips\obj\x86\Debug-Windows\MyG
 C:\Users\benem\Documents\GitHub\Battleship\BattleShips\obj\x86\Debug-Windows\MyGame.pdb
 C:\Users\benem\Documents\GitHub\Battleship\BattleShips\bin\Debug\Resources\highscores.txt~
 C:\Users\benem\Documents\GitHub\Battleship\BattleShips\obj\x86\Debug-Windows\MyGameWin.csprojResolveAssemblyReference.cache
-C:\Users\benem\Documents\GitHub\Battleship\BattleShips\bin\Debug\nunit.framework.dll
 C:\Users\benem\Documents\GitHub\Battleship\BattleShips\bin\Debug\nunit.framework.xml

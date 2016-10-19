@@ -37,4 +37,6 @@ public interface ISeaGrid
 	/// <param name="col">the column of the tile</param>
 	/// <returns>the result of the attack</returns>
 	AttackResult HitTile(int row, int col);
+
+	int SweepTile(int row, int col);
 }

@@ -229,6 +229,8 @@ public static class GameController
 		CheckAttackResult(result);
 	}
 
+
+
 	/// <summary>
 	/// Gets the AI to attack.
 	/// </summary>

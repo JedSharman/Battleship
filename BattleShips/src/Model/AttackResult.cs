@@ -40,9 +40,12 @@ public class AttackResult
 	/// <value>A textual description of the result.</value>
 	/// <returns>A textual description of the result.</returns>
 	/// <remarks>A textual description of the result.</remarks>
-	public string Text {
+	public string Text
+	{
 		get { return _Text; }
+		set{ _Text = value; }
 	}
+
 
 	/// <summary>
 	/// The row where the attack occurred

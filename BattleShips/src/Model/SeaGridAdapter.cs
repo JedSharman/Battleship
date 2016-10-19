@@ -61,6 +61,13 @@ public class SeaGridAdapter : ISeaGrid
 	/// </summary>
 	public event EventHandler Changed;
 
+	public int SweepTile (int row, int col)
+	{
+		//throw new NotImplementedException ();
+		//return 100;
+		return _MyGrid.SweepTile(row, col);
+	}
+
 	/// <summary>
 	/// Get the width of a tile
 	/// </summary>

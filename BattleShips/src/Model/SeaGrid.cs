@@ -160,6 +160,25 @@ public class SeaGrid : ISeaGrid
 		}
 	}
 
+	public int SweepTile(int row, int col){
+		int sweepcount = 0;
+
+		for (int r = row -1 ; r < row + 2; r++)
+		{
+			for (int c = col -1; c < col + 2; c++)
+			{
+				if (r > 0 && r<_HEIGHT && c > 0 && c <_WIDTH)
+				{
+					if ( _GameTiles[r, c].View == TileView.Hit || _GameTiles[r, c].View == TileView.Ship)
+					{
+						sweepcount++;
+					}
+				}
+			}
+		}
+		return sweepcount;
+	}
+
 	/// <summary>
 	/// HitTile hits a tile at a row/col, and whatever tile has been hit, a
 	/// result will be displayed.

@@ -191,6 +191,8 @@ public class Player : IEnumerable<Ship>
 				_hits += 1;
 				break;
 			case ResultOfAttack.Miss:
+			///CODE HERE
+			result.Text += "[" + EnemyGrid.SweepTile(row,col) + "]";
 				_misses += 1;
 				break;
 		}
