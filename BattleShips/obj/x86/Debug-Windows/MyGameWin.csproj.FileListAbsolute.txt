@@ -7,6 +7,7 @@ C:\Users\benem\Documents\GitHub\Battleship\BattleShips\bin\Debug\Resources\fonts
 C:\Users\benem\Documents\GitHub\Battleship\BattleShips\bin\Debug\Resources\fonts\ffaccess.ttf
 C:\Users\benem\Documents\GitHub\Battleship\BattleShips\bin\Debug\Resources\fonts\maven_pro_regular.ttf
 C:\Users\benem\Documents\GitHub\Battleship\BattleShips\bin\Debug\Resources\highscores.txt
+C:\Users\benem\Documents\GitHub\Battleship\BattleShips\bin\Debug\Resources\highscores.txt~
 C:\Users\benem\Documents\GitHub\Battleship\BattleShips\bin\Debug\Resources\images\deploy.jpg
 C:\Users\benem\Documents\GitHub\Battleship\BattleShips\bin\Debug\Resources\images\deploy_button_hl.png
 C:\Users\benem\Documents\GitHub\Battleship\BattleShips\bin\Debug\Resources\images\deploy_dir_button_horiz.png
@@ -55,9 +56,9 @@ C:\Users\benem\Documents\GitHub\Battleship\BattleShips\bin\Debug\Resources\SwinG
 C:\Users\benem\Documents\GitHub\Battleship\BattleShips\bin\Debug\Resources\SwinGame.ico
 C:\Users\benem\Documents\GitHub\Battleship\BattleShips\bin\Debug\MyGame.exe
 C:\Users\benem\Documents\GitHub\Battleship\BattleShips\bin\Debug\MyGame.pdb
+C:\Users\benem\Documents\GitHub\Battleship\BattleShips\bin\Debug\nunit.framework.dll
 C:\Users\benem\Documents\GitHub\Battleship\BattleShips\bin\Debug\SwinGame.dll
+C:\Users\benem\Documents\GitHub\Battleship\BattleShips\bin\Debug\nunit.framework.xml
+C:\Users\benem\Documents\GitHub\Battleship\BattleShips\obj\x86\Debug-Windows\MyGameWin.csprojResolveAssemblyReference.cache
 C:\Users\benem\Documents\GitHub\Battleship\BattleShips\obj\x86\Debug-Windows\MyGame.exe
 C:\Users\benem\Documents\GitHub\Battleship\BattleShips\obj\x86\Debug-Windows\MyGame.pdb
-C:\Users\benem\Documents\GitHub\Battleship\BattleShips\bin\Debug\Resources\highscores.txt~
-C:\Users\benem\Documents\GitHub\Battleship\BattleShips\obj\x86\Debug-Windows\MyGameWin.csprojResolveAssemblyReference.cache
-C:\Users\benem\Documents\GitHub\Battleship\BattleShips\bin\Debug\nunit.framework.xml

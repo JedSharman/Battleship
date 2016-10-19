@@ -58,8 +58,8 @@
     </None>
     <WinLibs Include="lib\win32\*.dll" />
     <None Include="src\Model\AIEasyPlayer.cs" />
-    <None Include="packages.config" />
     <None Include="src\Tests\SeaGridTests.cs" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Target Name="CopyLibsToOut">
     <Copy SourceFiles="@(WinLibs)" DestinationFolder="$(OutDir)" />

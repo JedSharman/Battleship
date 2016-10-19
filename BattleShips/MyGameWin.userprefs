@@ -1,15 +1,16 @@
 ﻿<Properties StartupItem="MyGameWin.csproj" RefactoringSettings.EnableRefactorings="True">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug-Windows|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="src\DiscoveryController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src\Model\Player.cs">
     <Files>
-      <File FileName="src\Model\SeaGrid.cs" Line="1" Column="1" />
-      <File FileName="src\Tests\SeaGridTests.cs" Line="1" Column="1" />
-      <File FileName="src\Model\Ship.cs" Line="1" Column="1" />
-      <File FileName="src\Model\AttackResult.cs" Line="1" Column="1" />
-      <File FileName="src\Model\ShipName.cs" Line="1" Column="1" />
-      <File FileName="src\Model\Player.cs" Line="1" Column="1" />
-      <File FileName="src\Model\Tile.cs" Line="1" Column="1" />
-      <File FileName="src\DiscoveryController.cs" Line="31" Column="4" />
+      <File FileName="src\DiscoveryController.cs" Line="32" Column="4" />
+      <File FileName="src\GameController.cs" Line="161" Column="31" />
+      <File FileName="src\Model\SeaGrid.cs" Line="164" Column="22" />
+      <File FileName="src\Model\ISeaGrid.cs" Line="31" Column="1" />
+      <File FileName="src\Model\SeaGridAdapter.cs" Line="67" Column="5" />
+      <File FileName="src\Model\TileView.cs" Line="13" Column="15" />
+      <File FileName="src\Model\Player.cs" Line="199" Column="1" />
+      <File FileName="src\UtilityFunctions.cs" Line="212" Column="47" />
+      <File FileName="src\Model\AttackResult.cs" Line="47" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
